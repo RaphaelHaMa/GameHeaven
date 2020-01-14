@@ -1,0 +1,24 @@
+﻿@page
+@model GameHeaven.ListModel
+@{
+    ViewData["Title"] = "List of Games";
+}
+
+<h1>All Games</h1>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Ages</th>
+        <th>Players</th>
+        <th>Category</th>
+    </tr>
+    @foreach (var game in Model.Games)
+    {
+        <tr>
+            <td>@game.Name</td>
+            <td>@game.Ages</td>
+            <td>@game.Players</td>
+            <td>@game.Category.Description</td>
+        </tr>
+    }
+</table>
