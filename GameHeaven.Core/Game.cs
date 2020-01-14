@@ -14,6 +14,7 @@ namespace GameHeaven.Core
         public int MinAge { get; set; }
         public int MaxAge { get; set; }
         public GameCategory Category { get; set; }
+        public Publisher Publisher { get; set; }
 
         public string Ages
         {
